@@ -1,0 +1,4 @@
+# Referenced at E:\Projects\MOM_NEW\mom-delivery\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:49
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at E:\Projects\MOM_NEW\mom-delivery\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:49
+-keep class com.momdelivery.network.ThisApp { <init>(); }

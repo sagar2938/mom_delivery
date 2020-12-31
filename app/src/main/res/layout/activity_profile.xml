@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_210"
+                android:background="@drawable/manager_bg">
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profile_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_70"
+                    app:cardBackgroundColor="#fff"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="55dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Shadab Azam Farooqui"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_1"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:background="@color/divider_menu"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/dp_5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/black"
+                                android:textAlignment="textEnd"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:layout_toRightOf="@+id/mobile_ic"
+                                android:padding="@dimen/dp_3"
+                                android:text="Company Name:" />
+
+                            <TextView
+                                android:id="@+id/companyName"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/mobile_ic"
+                                android:padding="@dimen/dp_3"
+                                android:text="companyName" />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/dp_5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/black"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:textAlignment="textEnd"
+                                android:layout_toRightOf="@+id/mobile_ic"
+                                android:padding="@dimen/dp_3"
+                                android:text="Mobile:" />
+
+                            <TextView
+                                android:id="@+id/mobile"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textAlignment="textStart"
+                                android:layout_toRightOf="@+id/mobile_ic"
+                                android:padding="@dimen/dp_3"
+                                android:text="mobile" />
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/dp_5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:textColor="@color/black"
+                                android:textAlignment="textEnd"
+                                android:layout_toRightOf="@+id/mobile_ic"
+                                android:padding="@dimen/dp_3"
+                                android:text="Aadhaar No:" />
+
+                            <TextView
+                                android:id="@+id/aadharNo"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textAlignment="textStart"
+                                android:layout_toRightOf="@+id/mobile_ic"
+                                android:padding="@dimen/dp_3"
+                                android:text="aadharNo" />
+                        </LinearLayout>
+
+  <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/dp_5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:textColor="@color/black"
+                                android:textAlignment="textEnd"
+                                android:layout_toRightOf="@+id/mobile_ic"
+                                android:padding="@dimen/dp_3"
+                                android:text="Driving License:" />
+
+                            <TextView
+                                android:id="@+id/driveringLicense"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:textAlignment="textStart"
+                                android:layout_toRightOf="@+id/mobile_ic"
+                                android:padding="@dimen/dp_3"
+                                android:text="mobile" />
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/dp_5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:textColor="@color/black"
+                                android:textAlignment="textEnd"
+                                android:layout_toRightOf="@+id/mobile_ic"
+                                android:padding="@dimen/dp_3"
+                                android:text="Vehicle No:" />
+
+                            <TextView
+                                android:id="@+id/vehicleNo"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textAlignment="textStart"
+                                android:layout_toRightOf="@+id/mobile_ic"
+                                android:padding="@dimen/dp_3"
+                                android:text="vehicleNo" />
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/dp_5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:textColor="@color/black"
+                                android:textAlignment="textEnd"
+                                android:layout_toRightOf="@+id/mobile_ic"
+                                android:padding="@dimen/dp_3"
+                                android:text="Address:" />
+
+                            <TextView
+                                android:id="@+id/address"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:textAlignment="textStart"
+                                android:layout_toRightOf="@+id/mobile_ic"
+                                android:padding="@dimen/dp_3"
+                                android:text="address" />
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/home_user_img_rel"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_80"
+                android:background="@drawable/profile_bg"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/user" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_menu">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerVertical="true"
+                    android:rotation="180"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:src="@drawable/logout"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Logout"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_18"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
